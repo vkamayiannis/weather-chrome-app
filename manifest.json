@@ -1,0 +1,21 @@
+{
+  "name": "Current weather!",
+  "description": "Show current weather - example app",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "icons": {
+    "16": "icons/weather-16.png",
+    "128": "icons/weather-128.png"
+  },
+  "permissions": [
+    "geolocation",
+    "<all_urls>"
+  ]
+}

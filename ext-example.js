@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $("#button-click").click(function () {
-    var API_KEY = "xxxxxx";
     var city = "Thessaloniki";
     var country_code = "GR";
     var url = "http://api.openweathermap.org/data/2.5/forecast?q=";

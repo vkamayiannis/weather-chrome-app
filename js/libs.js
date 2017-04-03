@@ -39,11 +39,16 @@ var longtitude;
 function showLocation(position) {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
+    console.log(latitude);
+    console.log(longitude);
     var startdate = getCurrentDate();
     var startdate_date = new Date();
-    var url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=";
-    //var exec_url = url + city + "," + country_code + "&units=metric&cnt=5&appid=" + API_KEY;
-    var exec_url = url + latitude + "&lon=" + longitude + "&units=metric&cnt=5&appid=" + API_KEY;
+    var city = "Thessaloniki";
+    var country_code = "GR";
+    //var url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=";
+    var url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=";
+    var exec_url = url + city + "," + country_code + "&units=metric&cnt=5&appid=" + API_KEY;
+    //var exec_url = url + latitude + "&lon=" + longitude + "&units=metric&cnt=5&appid=" + API_KEY;
     $.getJSON(exec_url)
         .done(function (json) {
             var obj = JSON.parse(JSON.stringify(json));

@@ -44,3 +44,18 @@ body{
   font-size: 40px;
   font-weight: bold;
 }
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    /*margin-right:-4px;*/
+}
+.col-min {
+    /* custom min width */
+    min-width:320px;
+}

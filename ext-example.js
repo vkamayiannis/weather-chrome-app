@@ -10,18 +10,18 @@ $(document).ready(function () {
     $.getJSON(exec_url)
       .done(function (json) {
         var obj = JSON.parse(JSON.stringify(json));
-        console.log(obj);
         var city = obj.city.name;
         var country_code = obj.city.country;
-        $("#city-name").html(city+', '+country_code);
+        $("#city-name").html(city + ', ' + country_code);
         obj.list.forEach(function (currentValue, index, arr) {
           var tmp = currentValue;
           var min = tmp.temp.min;
           var max = tmp.temp.max;
-          var currentdate = new Date(startdate_date.getTime() + (index*24*60*60*1000));
-          console.log(currentdate);
+          var currentdate = new Date(startdate_date.getTime() + (index * 24 * 60 * 60 * 1000));
+          var icon_class = "wi-owm-" + tmp.weather[0].id;
           $(".temp-date").html(formatdate(currentdate));
-          if (index == 0){
+          if (index == 0) {
+            $("#icon-class").addClass(icon_class);
             $("#current-day-min").html(min);
             $("#current-day-max").html(max);
           }

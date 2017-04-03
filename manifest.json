@@ -1,6 +1,6 @@
 {
   "name": "Current weather!",
-  "description": "Show current weather - example app",
+  "description": "Show current weather",
   "version": "0.1",
   "manifest_version": 2,
   "app": {

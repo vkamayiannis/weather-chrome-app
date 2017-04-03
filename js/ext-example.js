@@ -19,12 +19,16 @@ $(document).ready(function () {
           var max = tmp.temp.max;
           var currentdate = new Date(startdate_date.getTime() + (index * 24 * 60 * 60 * 1000));
           var icon_class = "wi-owm-" + tmp.weather[0].id;
-          $(".temp-date").html(formatdate(currentdate));
-          if (index == 0) {
-            $("#icon-class").addClass(icon_class);
-            $("#current-day-min").html(min);
-            $("#current-day-max").html(max);
-          }
+          var icon_number = "#icon-class-" + (index + 1).toString();
+          var weather_descr = "#weather-descr-" + (index + 1).toString();
+          var temp_id = "#temp-date-" + (index + 1).toString();
+          var min_id = "#current-day-min-" + (index + 1).toString();
+          var max_id = "#current-day-max-" + (index + 1).toString();
+          $(temp_id).html(formatdate(currentdate));
+          $(icon_number).addClass(icon_class);
+          $(weather_descr).html(tmp.weather[0].description);
+          $(min_id).html(min);
+          $(max_id).html(max);
         });
       }).fail(function (jqxhr, textStatus, error) {
         $("#json").html(error);

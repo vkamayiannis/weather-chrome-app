@@ -3,14 +3,13 @@
 
 <head>
   <title>Example Chrome app</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-  <script type="text/javascript" src="lib/jquery-3.2.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="lib/libs.js"></script>
-  <script type="text/javascript" src="ext-example.js"></script>
-  <script src="api-key.secret"></script>
+
+  <link href="css/bootstrap.min.css" , type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/libs.js"></script>
+  <script type="text/javascript" src="js/ext-example.js"></script>
+  <script src="js/api-key.secret"></script>
   <link href="css/main.css" type="text/css" rel="stylesheet">
   <link href="css/weather-icons.min.css" type="text/css" rel="stylesheet">
 </head>
@@ -20,21 +19,102 @@
   <!--<div class="container main-container">
     
   </div>-->
-  <div class="col-md-4 text-center">
-    <div class="panel panel-success">
-      <div class="panel-heading">
-        <div id="city-name"></div>
-        <div class="temp-date"></div>
-        <div id="current-image"></div>
-      </div>
-      <div class="panel-body">
-        <p><i id="icon-class" class="wi"></i></p>
-      </div>
-      <ul class="list-group text-center">
-        <li class="list-group-item" id="current-day-min"></li>
-        <li class="list-group-item" id="current-day-max"></li>
-      </ul>
+  <div class="container">
+    <div id="city-name" align="center"></div>
+    <div class="col-md-2 text-center">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div id="temp-date-1"></div>
+          <div id="current-image"></div>
+        </div>
+        <div class="panel-body">
+          <i id="icon-class-1" class="wi"></i>
+          <p id="weather-descr-1"></p>
+        </div>
+        <ul class="list-group text-center">
+          <li class="list-group-item" id="current-day-min-1"></li>
+          <li class="list-group-item" id="current-day-max-1"></li>
+        </ul>
 
+      </div>
+    </div>
+    <!--DAY 2-->
+    <div class="col-md-2 text-center">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div id="city-name"></div>
+          <div id="temp-date-2"></div>
+          <div id="current-image"></div>
+        </div>
+        <div class="panel-body">
+          <i id="icon-class-2" class="wi"></i>
+          <p id="weather-descr-2"></p>
+        </div>
+        <ul class="list-group text-center">
+          <li class="list-group-item" id="current-day-min-2"></li>
+          <li class="list-group-item" id="current-day-max-2"></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <!--DAY 3-->
+    <div class="col-md-2 text-center">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div id="city-name"></div>
+          <div id="temp-date-3"></div>
+          <div id="current-image"></div>
+        </div>
+        <div class="panel-body">
+          <i id="icon-class-3" class="wi"></i>
+          <p id="weather-descr-3"></p>
+        </div>
+        <ul class="list-group text-center">
+          <li class="list-group-item" id="current-day-min-3"></li>
+          <li class="list-group-item" id="current-day-max-3"></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <!--DAY 4-->
+    <div class="col-md-2 text-center">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div id="city-name"></div>
+          <div id="temp-date-4"></div>
+          <div id="current-image"></div>
+        </div>
+        <div class="panel-body">
+          <i id="icon-class-4" class="wi"></i>
+          <p id="weather-descr-4"></p>
+        </div>
+        <ul class="list-group text-center">
+          <li class="list-group-item" id="current-day-min-4"></li>
+          <li class="list-group-item" id="current-day-max-4"></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <!--DAY 5-->
+    <div class="col-md-2 text-center">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div id="city-name"></div>
+          <div id="temp-date-5"></div>
+          <div id="current-image"></div>
+        </div>
+        <div class="panel-body">
+          <i id="icon-class-5" class="wi"></i>
+          <p id="weather-descr-5"></p>
+        </div>
+        <ul class="list-group text-center">
+          <li class="list-group-item" id="current-day-min-5"></li>
+          <li class="list-group-item" id="current-day-max-5"></li>
+        </ul>
+      </div>
     </div>
   </div>
 
